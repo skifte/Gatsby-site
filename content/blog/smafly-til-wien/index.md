@@ -12,5 +12,11 @@ Hele historien om langturen til Wien stod på trykk i Flynytt sitt reisebilag (v
 
 I det samme reisebilaget bidro også jeg med en artikkel. Det var om flyturen til vi hadde til Duxford, som i sin tid også ble blogget om . 
 
-![Ola og Anders på forsiden av Flynytt sitt reisebilag](./wien-forside-flynytt.jpg)
+<figure>
+
+<img src="./wien-forside-flynytt.jpg" alt="Ola og Anders på forsiden av Flynytt sitt reisebilag"/>
+
+<figcaption class="caption">
 Småflykameratene Ola og Anders (undertegnede) figurerer på forsiden til selveste Flynytt sitt reisemagasin i 2018. Historier fra to av turene våre, til Wien og Duxford, stod på trykk der. Bildet på forsiden ble tatt av Michael , som også har vært med på alle langturene våre.
+</figcaption>
+</figure>
