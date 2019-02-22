@@ -3,6 +3,10 @@ import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 
+// Brukes slik:
+// import Bio from "../components/bio"
+// inkluders med <Bio />
+
 function Bio() {
   return (
     <StaticQuery
