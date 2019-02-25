@@ -1,11 +1,15 @@
 ---
 title: Med småfly til Wien
 date: "2018-05-01"
+tags: ["utland", "Europa", "LN-NRO"]
 ---
-
-![Fly og besetning](./wien-alle.jpg)
-Hele crew-et etter landing i Wien. Ola, Michael og Anders. Foto: Michael Katz .
-
+<figure>
+<!-- ![Fly og besetning](./wien-alle.jpg) -->
+<img src="./wien-alle.jpg" alt="Fly og besetning"/>
+<figcaption class="caption">
+Hele crew-et etter landing i Wien. Ola, Michael og Anders. Foto: Michael Katz.
+</figcaption>
+</figure>
 Å fly gjennom Wien, over Donau, er en fantastisk opplevelse. Å fortsette langs alpene til Salzburg, er like fantastisk. På turen opplevde vi også både snag  (feil på fly) og dårlig vær. En nødvendig, men ikke planlagt, landing gjorde at vi måtte forklare oss for politi og at vi fikk bot for landing etter stengetid.
 
 Hele historien om langturen til Wien stod på trykk i Flynytt sitt reisebilag (våren 2018), men Michael har også skrevet om turen på  Flyåret 2017 – tur/retur Wien og Salzburg.
