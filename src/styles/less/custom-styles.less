@@ -1,0 +1,489 @@
+// skifte.com LESS
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+
+
+// Scaffolding
+//-----------------------------
+html {
+  font-size:100%;
+}
+
+body {
+  margin: 0;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+  background-color: @bodyBackground;
+}
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+  .transition(.5s);
+
+}
+a:hover,
+a:focus {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+a.highlightable { 
+      display:block;     
+     span { 
+      padding:0 .4rem .4rem .4rem;
+      margin:0 -.4rem -.4rem -.4rem;
+    .transition(.2s);
+     display:inline-block;
+     padding-bottom: .4rem;
+     margin-bottom: -.4rem;
+      }
+    &:hover span,
+    &:focus span,
+    &.active span {
+      background:@textColor;
+      color:@white;
+      
+    } 
+}
+
+
+//
+// Typography
+// --------------------------------------------------
+
+small   { font-size: 85%; }
+
+strong  { font-weight: bold; }
+em      { font-style: italic; }
+cite    { font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: (@baseLineHeight / 2.5) 0;
+  font-family: @baseFontFamily;
+  font-weight: normal;
+  line-height: @baseLineHeight;
+
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  small {
+    font-weight: normal;
+    line-height: 1;
+    color: @grayLight;
+  }
+}
+
+h1,
+h2,
+h3 { line-height: 1.2; margin-top:0; }
+
+h1 { font-size: @baseFontSize * 2.75; } // ~38px
+h2 { font-size: @baseFontSize * 2.25; } // ~32px
+h3 { font-size: @baseFontSize * 1.75; } // ~24px
+h4 { font-size: @baseFontSize * 1.25; } // ~18px
+h5 { font-size: @baseFontSize; }
+h6 { font-size: @baseFontSize * 0.85; } // ~12px
+
+
+.moduletitle {
+  font-family: @googleHeadingFont;
+  font-size: 1.3em;
+  font-weight:bold;
+  background: @grayLighter;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  span {
+    background: @white;
+    display: inline-block;
+    padding: 0 1em;
+  }
+}
+
+
+
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+  padding: 0;
+  margin: 0 0 @baseLineHeight / 2 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: @baseLineHeight;
+}
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 @baseLineHeight;
+  border-left: 5px solid @grayLighter;
+  p {
+    margin-bottom: 0;
+    font-size: @baseFontSize * 1.25;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  small {
+    display: block;
+    line-height: @baseLineHeight;
+    color: @grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+
+
+// Body text
+// -------------------------
+
+.bloglist {
+
+  .blogpost {
+     margin-bottom: @standardMargin;
+     padding-bottom: @standardMargin;
+     border-bottom: 1px solid @grayLighter;
+  }
+}
+
+
+.blogpost {
+  
+  footer {
+    font-size:@fontSizeSmall;
+    p {
+      margin-bottom:.4rem;
+      &:last-of-type{
+        margin-bottom:0;
+      }
+    }
+  }
+  .thumbnail {
+    float:right;
+    margin:0 0 @baseFontSize @baseFontSize;
+  }
+  .shrinked {
+    width:520px;
+  }
+}
+
+.byline {
+  font-size:.9rem;
+  font-style: italic;
+  color: @gray;
+}
+
+.blogposttitle a {
+  color:@textColor;
+}
+
+.read-more {
+  display: inline-block;
+  margin-bottom: @standardMargin;
+}
+
+.articlebody {
+    figcaption {
+      padding:.4rem;
+      background: @grayLightest;
+      //border-bottom: 1px solid @grayLighter;
+      //border-left: 1px solid @grayLighter;
+      //border-right: 1px solid @grayLighter;
+      .border-bottom-radius(@baseBorderRadius);
+    }
+    a {
+      text-decoration: underline;
+    }
+    .map {
+      height:500px;
+    }
+}
+
+p, .articlebody figure, .blogpost header, .sharebuttons {
+  margin: 0 0 18px; //@baseFontSize;
+}
+
+.articlebody {
+ 
+  p + h2,
+  ul + h2,
+  ol + h2 {
+    padding-top: 20px;//@baseFontSize;
+  }
+
+}
+
+
+.editor-image-right {
+  float:right;
+  margin-left: @standardMargin;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.siblings {
+  border-top: 1px solid @grayLighter;
+  padding-top:@baseFontSize;
+  margin-top:@baseFontSize;
+  .prev-post {
+    float:left;
+    width:50%;
+  }
+  .next-post {
+    float:right;
+    text-align: right;
+    width:50%;
+  }
+}
+
+.comments-section {
+  padding-top:@standardMargin;
+}
+
+.comment, .sharebuttons, .fullstory .articlebody {
+  margin-bottom: @standardMargin;
+}
+
+.sharebutton {
+float:left;
+}
+
+//
+// LATEST COMMENTS
+// ----------------------------------
+.latest-comments {
+  //
+  ul {
+    list-style:none;
+    margin:0;
+    margin-bottom:@standardMargin;
+    font-size: @fontSizeSmall;
+    li {
+      
+    }
+  }
+}
+
+section.module {
+  margin-bottom: @standardMargin *2.2;
+  &:last-of-type {
+    margin-bottom:0;
+  }
+}
+
+nav.module {
+  margin-bottom: @standardMargin *2.2;
+}
+
+
+//
+// SEARCH RESULTS
+// ----------------------------------
+
+.searchresults > header {
+   margin-bottom: @standardMargin;
+     padding-bottom: @standardMargin;
+     border-bottom: 1px solid @grayLighter;
+}
+
+.hitlist {
+  a {
+    display: block;
+    text-decoration: none;
+    color:@textColor;
+    padding:@standardPadding;
+    margin-bottom: @standardMargin;
+     padding-bottom: @standardMargin;
+     border-bottom: 1px solid @grayLighter;
+    &:hover,
+    &:focus {
+      background: @grayLighter;
+    }
+    p {
+      margin:0;
+    }
+  }
+  h1 {
+    font-size:@fontSizeLarge;
+  }
+  img {
+    float:right;
+  }
+  .url {
+    color:@linkColor;
+  }
+}
+
+
+//
+// nav
+//
+
+.nav {
+  margin-left: 0;
+  margin-bottom: @baseLineHeight;
+  list-style: none;
+}
+
+// Make links block level
+.nav a {
+  display: block;
+}
+
+//
+// Submeny
+//
+
+.nav-list {
+  a.highlightable { 
+    span {
+      .transition(.01s);
+    }
+    &:hover span,
+    &:focus span,
+    &.active span {   
+      padding: 0 .4rem;
+      margin: 0 -.4rem;
+    }
+  }
+}
+
+
+
+
+// Sitefooter
+//---------------------------------------
+
+.sitefooter {
+  
+  padding: 1.5em 0 10em 0;
+  margin-top:4em;
+  color:lighten(@grayLight, 15%);
+  background: @textColor;
+  .box-shadow(0 2px 10px 3px rgba(0, 0, 0, 0.5)); 
+
+  }
+
+
+.sitefooter p {
+  font-size: @fontSizeMini;
+    margin-bottom:.4rem;
+}
+
+.sitefooter a {
+      display:inline-block;      
+      text-decoration: none;
+      color:@white;
+      &:hover,
+      &:focus {
+        background:@white;
+        color:@textColor;
+        text-decoration: none;
+      }
+}
+
+.sitefooter .span4 {
+    text-align: right;
+  }
+
+//
+// ERROR PAGE
+//---------------------------
+
+.error-page-container {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  margin-top:-1.485em;
+  margin-bottom: -4em;
+  padding-top:2em;
+  padding-bottom: 4em;
+  height:798px;
+}
+
+.error-page {
+    background: rgba(255,255,255,.98);
+    width:auto;
+    display:inline-block;
+    padding:@standardMargin;
+    .box-shadow(20px 20px 60px 0px rgba(0, 0, 0, 0.3)); 
+    h1 {
+      margin-bottom: .4em;
+    }
+    .lead {
+      font-size:@fontSizeLarge;
+
+    }
+  
+}
+
+
+
+
+
+
+//
+// Wells
+// --------------------------------------------------
+
+
+// Base class
+.well, .comment {
+  padding: @baseFontSize;
+  background-color: @wellBackground;
+ .border-radius(@baseBorderRadius);
+}
+
+
+.group {
+  .clearfix();
+}
+
+
+
+

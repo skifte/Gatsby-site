@@ -1,0 +1,84 @@
+
+.module-light {
+  form,p {
+    font-size:@fontSizeSmall;
+  }
+}
+
+/*TAF-dekoder*/
+.taf dl dt {
+  width:20%;
+  float:left;
+  clear:left;
+}
+
+.taf dd, 
+#geolocation dd {
+  margin-left:@standardMargin;
+  float:left;
+  clear:right;
+}
+
+.taf h2 {
+  font-size:@baseFontSize;
+  font-weight: bold;
+}
+
+.forecast {margin-bottom:@standardMargin;}
+.forecast .publishdate {background-color:@grayLighter;}
+
+.module select {
+  width:100%;
+ .box-sizing(border-box);
+ text-transform: lowercase;
+}
+
+.google-maps-small {height:300px;}
+
+
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: @standardMargin;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(@baseBorderRadius);
+}
+.alert {
+  // Specified for the h4 to prevent conflicts of changing @headingsColor
+  color: @warningText;
+}
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+}
+.alert-success h4 {
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+
+.alert-info {
+  background-color: @wellBackground;//@infoBackground;
+  border:none;
+  //border-color: @infoBorder;
+  color: @textColor;
+}
+

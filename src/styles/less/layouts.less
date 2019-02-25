@@ -1,0 +1,134 @@
+//
+// Layouts
+// --------------------------------------------------
+
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  margin:0 auto;
+  max-width: 68.18em; //1200px;	
+  padding-right: @standardPadding;
+  padding-left: @standardPadding;
+  .clearfix();
+}
+
+#grid > .fluid(@fluidGridColumnWidth1200, @fluidGridGutterWidth1200);
+
+
+@media (max-width: 27em) {
+	.comments-form label {
+		display: block;
+		text-align: left;
+	}
+	.comments-form .btn {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 30em) {
+	h1 { font-size: @baseFontSize * 1.5; } 
+	h2 { font-size: @baseFontSize * 1.4; } 
+	h3 { font-size: @baseFontSize * 1.3; } 
+	h4 { font-size: @baseFontSize * 1.2; } 
+	h6 { font-size: @baseFontSize * 0.85; } 
+	.bloglist.archive .blogpost img {
+		display: none;
+	}
+}
+
+
+@media (max-width: 49em) { // ca 760px // MOBIL
+
+	body {
+		background: @grayLighter;
+		article {
+			background: @white;
+			padding:@standardPadding;
+			border-bottom: none;
+			 .box-shadow(0px 1px 5px 0px rgba(0, 0, 0, 0.3)); 
+		}
+		.module {
+			background: @white;
+			padding:@standardPadding;
+		}
+		.editor-image-right {
+			  float:none;
+			  margin-left:0;
+			  clear:both;
+			  display: block;
+			}
+
+		.blogpost {
+			.thumbnail {
+				margin-left:0;
+				float:none;
+				//text-align: center;
+				img {
+					width:100%;
+				}
+				&.shrinked {
+					width:auto;
+				}
+			}
+
+		}		
+	} // body
+
+
+	.bloglist {
+		article:first-child {
+			.summary { display:block;}
+			.articlebody {display:none;}
+		}
+	}
+
+	
+	// Grid start
+	 [class*="span"],
+	  .row-fluid [class*="span"] {
+	    float: none;
+	    display: block;
+	    width: 100%;
+	    margin-left: 0;
+	    .box-sizing(border-box);
+	  }
+	  .span12,
+	  .row-fluid .span12 {
+	    width: 100%;
+	    .box-sizing(border-box);
+	  }
+	  .row-fluid [class*="offset"]:first-child {
+	    margin-left: 0;
+	  }
+	// grid end
+
+	.error-page-container {
+		height:400px;
+	}
+
+} // max-width 49 em end (MOBIL)
+
+
+
+
+@media (max-width: 56em) {
+	.comments-form label {
+	  display: inline-block;
+	  width:6em;
+	  padding-right:1em;
+	  text-align: right;
+	}
+
+	.comments-form .text,
+	.comments-form textarea {
+	  width:12em;
+	}
+
+	.comments-form .btn {
+	  margin-left:7em;
+	}
+
+
+}
+
+
