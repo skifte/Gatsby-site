@@ -1,34 +1,51 @@
 import React from "react"
 import { Link } from "gatsby"
+import SiteHeader from "../components/siteHeader"
 
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    /* let header
 
-    if (location.pathname === rootPath) {
+   if (location.pathname === rootPath) {
       header = (
         <h1>
           <Link to={`/`}>
             {title}
-          </Link>
+          </Link> xxxxx
         </h1>
+        
       )
     } else {
       header = (
         <h3>
           <Link to={`/`}>
             {title}
-          </Link>
+          </Link> yyyy
         </h3>
       )
-    }
+    }*/
+
+    // main og aside kan defineres her om forskjellig layout på index- og visningsside
+
+
+
     return (
       <div>
-        <header>{header}</header>
-        <main>{children}</main>
+        <SiteHeader/>
+        <div className="container-fluid">
+        <div className="row-fluid">
+        <main className="span9">
+        {children}
+        </main>
+        <aside className="span3">
+           ASIDE
+        </aside>
+        </div>
+        
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
