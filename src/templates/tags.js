@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-
 // https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/
 
 // Components
@@ -19,17 +18,18 @@ const Tags = ({ pageContext, data }) => {
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
-          const { path, title } = node.frontmatter
+          const { slug } = node.fields
+          const { title } = node.frontmatter
           return (
-            <li key={path}>
-              <Link to={path}>{title}</Link>
+            <li key={slug}>
+              <Link to={slug}>{title}</Link>
             </li>
           )
         })}
       </ul>
       {/*
               This links to a page that does not yet exist.
-              We'll come back to it!
+              You'll come back to it!
             */}
       <Link to="/tags">All tags</Link>
     </div>
@@ -47,8 +47,10 @@ Tags.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             frontmatter: PropTypes.shape({
-              path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
+            }),
+            fields: PropTypes.shape({
+              slug: PropTypes.string.isRequired,
             }),
           }),
         }).isRequired
@@ -69,11 +71,14 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
           }
         }
       }
     }
   }
+`
