@@ -21,7 +21,7 @@ class SiteHeader extends Component {
             <div className="expandable-menu-wrapper">
               <ul className="nav">
                 <ListLink to="/">Blogg</ListLink>
-                <ListLink to="/about/">About</ListLink>
+                <ListLink to="/om-anders/">About</ListLink>
               </ul>
               <div className="sitesearch">
                 <form
