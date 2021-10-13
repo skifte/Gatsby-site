@@ -1,96 +1,41 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+
 <h1 align="center">
-  Gatsby's blog starter
+  Anders Skifte
 </h1>
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 🚀 Quick start
+Flybloggen er nede, men kommer plutselig opp igjen (når jeg får tid). Her er i stedet litt om meg og lenker til andre ting jeg har skrevet og gjort 👇
 
-1.  **Create a Gatsby site.**
+Jeg kommer fra Tromsø og har en master i Design, Kommunikasjon og Medier fra IT-Universitetet i København, og har siden 2006 jobbet med frontend, universell utforming og digital produktutvikling. Siden 2020 har jeg vært arkitekt (og smidig-evangelist) hos nettselskapet Lede i Porsgrunn. Jeg har det meste av min erfaring fra Bekk Consulting i Oslo.
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+- - -
 
-    ```sh
-    # create a new Gatsby site using the blog starter
-    npx gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
-    ```
+## Skriblerier
 
-1.  **Start developing.**
+Fra tid til annen skriver og prater jeg om faglige ting som opptar meg. Her er et knippe bloggposter:
 
-    Navigate into your new site’s directory and start it up.
+- [Hvordan vet man om produktet man lager skaper verdi](https://www.linkedin.com/pulse/hvordan-vet-man-om-produktet-lager-skaper-verdi-anders-skifte/?trackingId=3UyjXNBmi1aUtdFMSPoYTA%3D%3D), Linkedin 2021
+- [Digital produktutvikling er kunsten å lære hva man skal lage mens man lager det](https://www.linkedin.com/pulse/digital-produktutvikling-og-kunsten-%C3%A5-l%C3%A6re-hva-man-skal-anders-skifte/) – tildels basert på Inspired, Linkedin 2021
+- [Oppsummering av Team Topologies](https://medium.com/smidigalliansen/oppsummering-av-team-topologies-5a5ab0bef926), Smidigalliansen 2019
+- [Oppsummering av Accelerate](https://medium.com/smidigalliansen/oppsummering-av-accelerate-the-science-of-lean-software-and-devops-c575cabbbb38), Smidigalliansen 2019
+- [Universell utforming er ikke kakepynt](https://blogg.bekk.no/universell-utforming-er-ikke-kakepynt-d95841b4ee8), Bekks fagblogg 2017
+- [Progressive enhancement](https://radar.bekk.no/tech2017/frontend-og-mobil/progressive-enhancement), Bekks teknologiradar 2017
+- [Universell utforming som tverrfaglig prosess](https://radar.bekk.no/tech2017/prosess-og-kvalitet/universell-utforming-som-tverrfaglig-prosess), Bekks teknologiradar 2017
+- [Høydepunkter fra CSUN Assistive Technology Conference](https://blogg.bekk.no/h%C3%B8ydepunkter-fra-csun-assistive-technology-conference-2017-f79add637cf6), Bekks fagblogg 2017
+- [Hvordan tester man universell utforming](https://blogg.bekk.no/hvordan-tester-man-universell-utforming-d327f71dcb82), Bekks fagblogg 2016
+- [Slik jobber vi med universell utforming hos NAV](https://blogg.bekk.no/slik-jobber-vi-med-universell-utforming-hos-nav-4e4b7d0802a7), Bekks fagblogg 2015
+- [Tilgjengelighet på beta.nav.no](https://blogg.bekk.no/tilgjengelighet-p%C3%A5-beta-nav-no-e1e7c4a6b1d5), Bekks fagblogg 2014
 
-    ```sh
-    cd my-blog-starter/
-    gatsby develop
-    ```
+- - -
 
-1.  **Open the source code and start editing!**
+## Kontakt
 
-    Your site is now running at `http://localhost:8000`!
+Jeg er ikke alt for vanskelig å komme i kontakt med. Du finner meg blant annet på:
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+- [Linkedin](https://www.linkedin.com/in/skifte/)
+- [Medium](https://medium.com/@skifte)
+- [Github](https://github.com/skifte)
+- [Youtube](https://www.youtube.com/c/andersskifte)
+- [Twitter](https://twitter.com/skifte)
